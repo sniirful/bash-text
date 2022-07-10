@@ -17,7 +17,7 @@ output.addEventListener('click', () => {
 });
 
 function textToBase64(text) {
-    return btoa(text);
+    return Base64.encode(text);
 }
 function base64ToBash(base64) {
     return BASH_TXT.replace('{}', base64);
